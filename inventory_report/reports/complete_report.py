@@ -9,7 +9,7 @@ class CompleteReport(SimpleReport):
 
         return (
           f"{super().generate(list)}\n"
-          f"{result}")
+          f"{result}\n")
 
 
 if __name__ == "__main__":
