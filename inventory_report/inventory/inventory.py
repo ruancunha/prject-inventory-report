@@ -53,19 +53,3 @@ class Inventory:
         elif type == "completo":
             report = CompleteReport.generate(file)
         return report
-
-
-# if __name__ == "__main__":
-#     # obj_reader = Inventory()
-#     print("CSV Simples")
-#     print(Inventory.import_data("/home/ruan/Projetos/sd-016-b-inventory-report/inventory_report/data/inventory.csv", "simples"))
-#     print("CSV completo")
-#     print(Inventory.import_data("/home/ruan/Projetos/sd-016-b-inventory-report/inventory_report/data/inventory.csv", "completo"))
-#     print("JSON Simples")
-#     print(Inventory.import_data("/home/ruan/Projetos/sd-016-b-inventory-report/inventory_report/data/inventory.json", "simples"))
-#     print("JSON completo")
-#     print(Inventory.import_data("/home/ruan/Projetos/sd-016-b-inventory-report/inventory_report/data/inventory.json", "completo"))
-#     print("XML Simples")
-#     print(Inventory.import_data("/home/ruan/Projetos/sd-016-b-inventory-report/inventory_report/data/inventory.xml", "simples"))
-#     print("XML completo")
-#     print(Inventory.import_data("/home/ruan/Projetos/sd-016-b-inventory-report/inventory_report/data/inventory.xml", "completo"))
