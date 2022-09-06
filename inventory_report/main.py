@@ -8,7 +8,7 @@ from .inventory.inventory_refactor import InventoryRefactor
 
 def main():
     if len(sys.argv) != 3:
-        print("Verifique os argumentos")
+        print("Verifique os argumentos", file=sys.stderr)
     else:
         file = sys.argv[1]
         type = sys.argv[2]
@@ -19,7 +19,7 @@ def main():
         else:
             inventory = InventoryRefactor(XmlImporter)
 
-        print(inventory.import_data(file, type))
+        print(inventory.import_data(file, type), end="")
 
 
 if __name__ == "__main__":
